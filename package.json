@@ -1,6 +1,6 @@
 {
 	"name": "import-typescript",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Import Typescript on the fly.",
 	"repository": "https://github.com/Richienb/import-typescript.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
