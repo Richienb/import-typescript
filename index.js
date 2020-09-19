@@ -1,4 +1,5 @@
 "use strict"
+// Based on https://github.com/vadimdemedes/import-jsx/tree/28687c2761b0df5551414e9b3c75033171d8ed8d
 const path = require("path")
 const resolveFrom = require("resolve-from")
 const callerPath = require("caller-path")
