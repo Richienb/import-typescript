@@ -1,15 +1,26 @@
+declare namespace importTypescript {
+	export interface Options {
+		/**
+		Whether to cache the transpiled code.
+
+		@default true
+		*/
+		cache?: boolean
+	}
+}
+
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Import Typescript on the fly.
+@param moduleId The module id.
+@returns The imported module.
 @example
 ```
-const theModule = require("the-module");
+const importTs = require("import-typescript")
+const foo = importTs("./foo.ts")
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+foo()
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function importTypescript<ModuleType = unknown>(moduleId: string, options?: importTypescript.Options): ModuleType
 
-export = theModule
+export = importTypescript

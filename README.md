@@ -1,41 +1,41 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# import-typescript [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/import-typescript/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/import-typescript)
 
-My awesome module.
+Import Typescript on the fly.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/import-typescript.png)](https://npmjs.com/package/import-typescript)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install import-typescript
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const importTs = require("import-typescript")
+const foo = importTs("./foo.ts")
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+foo()
 ```
 
 ## API
 
-### theModule(input, options?)
+### importTypescript(moduleId, options?)
 
-#### input
+#### moduleId
 
 Type: `string`
 
-Lorem ipsum.
+The module id.
 
 #### options
 
 Type: `object`
 
-##### postfix
+##### cache
 
-Type: `string`\
-Default: `rainbows`
+Type: `boolean`\
+Default: `true`
 
-Lorem ipsum.
+Whether to cache the transpiled code.
